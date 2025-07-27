@@ -14,7 +14,7 @@ export interface GeminiResponse {
 }
 
 class GeminiService {
-  private model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+  private model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
   private conversationHistory: ConversationMessage[] = [];
 
   async generateResponse(
